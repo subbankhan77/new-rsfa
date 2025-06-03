@@ -10,40 +10,37 @@ export default function Home() {
   return (
     <main className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-6 max-w-7xl relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Excellence in <span className="text-yellow-300">Fencing</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
-                Promoting sporting excellence through training, competition, and community development across Rajasthan.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/about" className="px-8 py-4 bg-white text-blue-700 rounded-lg hover:bg-blue-50 transition duration-300 font-semibold text-center shadow-lg">
-                  Learn More
-                </Link>
-                <Link href="/contact" className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-700 transition duration-300 font-semibold text-center">
-                  Join Us
-                </Link>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-2xl">
-                <Image 
-                  src="/dumm1.jpeg" 
-                  alt="Fencing in action" 
-                  width={600} 
-                  height={400} 
-                  className="rounded-xl w-full h-auto object-cover"
-                />
-              </div>
-            </div>
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 py-20">
+      {/* Hintergrund-Overlay */}
+      <div className="absolute inset-0 bg-black/30"></div>
+
+      {/* Inhalt */}
+      <div className="container mx-auto px-6 max-w-6xl relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {/* Bild 1 */}
+          <div className="rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm">
+            <Image
+              src="/fencing.jpg"
+              alt="Fencing 1"
+              width={600}
+              height={400}
+              className="w-full h-auto object-cover rounded-xl"
+            />
+          </div>
+
+          {/* Bild 2 */}
+          <div className="rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm">
+            <Image
+              src="/fencing1.jpg"
+              alt="Fencing 2"
+              width={600}
+              height={400}
+              className="w-full h-auto object-cover rounded-xl"
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Legacy Section */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">

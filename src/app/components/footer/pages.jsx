@@ -32,7 +32,7 @@ export default function Footer() {
                   Behind petrol pump sanganer airport,<br />
                   circle tonk road, Jaipur 302029<br />
                 </p>
-                <p className="text-gray-600 mt-2">Ph. 0141-2790445</p>
+                <p className="text-gray-600 mt-2">9351383046</p>
               </div>
             </div>
           </div>
